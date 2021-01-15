@@ -3,7 +3,7 @@
 #include <exception>
 #include <vector>
 
-std::vector<Artysta> sworzZespol(int n, std::string& s){
+std::vector<Artysta> sworzZespol(int n, const std::string& s){
     if(n!=s.size()){
         throw std::logic_error("Wyjatek w piatek");
     };

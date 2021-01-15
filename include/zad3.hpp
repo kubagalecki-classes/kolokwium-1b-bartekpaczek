@@ -13,5 +13,3 @@ class ArtystaPlusInstrument{
         return i.liczbaUczestnikow(a.getSluchacze());
     };
 };
-
-
