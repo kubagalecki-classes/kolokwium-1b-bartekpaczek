@@ -17,9 +17,9 @@ class Artysta{
         l_sluchaczy = 0;
     };
 
-    Artysta(const std::string& a, unsigned b):pseudonim(a), l_sluchaczy(b)};
+    Artysta(const std::string& a, unsigned b):pseudonim(a), l_sluchaczy(b){};
 
-    void graj(std::ostream& os) const{
+    virtual void graj(std::ostream& os) const{
         os<<pseudonim<<": "<<l_sluchaczy;
     };
 
@@ -28,6 +28,5 @@ class Artysta{
     };
     unsigned getSluchacze() const{
         return l_sluchaczy;
-    }
-
+    };
 };
