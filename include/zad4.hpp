@@ -9,9 +9,9 @@ std::vector<Artysta> stworzZespol(int n, const std::string& s){
     };
 
     std::vector<Artysta> zespol(n);
-    for(int i = 0; i<n; i++){
+    for(int i = 0; i<n; ++i){
         Artysta a(s, i+1);
-        zespol[n] = a;
+        zespol.at(n) = a;
     };
     return zespol;
 }
