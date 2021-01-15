@@ -4,4 +4,8 @@
 #include <deque>
 #include <vector>
 
-// tutaj algorytm liczPopularnych(T begin, T end)
+
+template<class T>
+int liczPopularnych(T begin, T end){
+    return std::count_if(begin, end, [](Artysta A){return A.getSluchacze()>1000;})
+}
